@@ -120,13 +120,13 @@ fn parse_enum(expr: Expr) -> Result<ImplementAvroSchema> {
 /// schema.
 ///
 /// ```rust
-/// aileron::include_avro!("schemas/person.avsc");
+/// avrogant::include_avro!("schemas/person.avsc");
 /// ```
 ///
 /// This also supports globbing i.e, you could just pass `"*.avsc"` and it will get all
 /// the files that matches with the pattern:
 /// ```rust
-/// aileron::include_avro!("schemas/*.avsc");
+/// avrogant::include_avro!("schemas/*.avsc");
 /// ```
 ///
 /// This supports all customizations supported by
@@ -135,7 +135,7 @@ fn parse_enum(expr: Expr) -> Result<ImplementAvroSchema> {
 /// This will make the `Person` struct implement both `rkyv::Serialize` and `serde::Serialize`
 /// (which is derived by default):
 /// ```rust
-///    aileron::include_avro!(
+///    avrogant::include_avro!(
 ///       "tests/person.avsc",
 ///       precision = 4,
 ///       impl_avro_schema = Derive,

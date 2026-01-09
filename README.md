@@ -1,4 +1,4 @@
-# Aileron
+# Avrogant
 
 ## A customizable proc macro for converting Avro schemas into Rust types.
 

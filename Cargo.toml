@@ -1,5 +1,5 @@
 [package]
-name = "aileron"
+name = "avrogant"
 description = "A proc macro for converting Avro schemas into Rust types"
 authors = ["Lucas Andreussi <lucasandreussi@gmail.com>"]
 license = "MIT"
